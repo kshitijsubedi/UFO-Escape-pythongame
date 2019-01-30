@@ -102,7 +102,7 @@ while play:
         # intro aba
         pygame.draw.rect(screen,(189,183,107),(250,250,300,150))
         text= font.render(" Welcome to UFO Escape !!! ",True,black)
-        screen.blit(text,(300,300))
+        screen.blit(text,(280,300))
         text4= font.render(" Use SPACE to play .  ",True,black)
         screen.blit(text4,(300,320))
         
@@ -122,10 +122,10 @@ while play:
         pygame.draw.rect(screen,(255,182,193),(300,300,300,150))
         text1=font.render("Your score was :",True,black)
         text2=font.render(str(score),True,black)
-        screen.blit(text1,(400,350))
+        screen.blit(text1,(380,350))
         screen.blit(text2,(420,380))
         text3=font.render("Press Right-ALT To restart ",True,black)
-        screen.blit(text3,(400,400))
+        screen.blit(text3,(350,420))
         if event.type ==pygame.KEYDOWN:
             if event.key == pygame.K_RALT:
                 bird.reset()
